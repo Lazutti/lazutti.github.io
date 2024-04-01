@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Discord Bot Komutları</title>
+    <link rel="stylesheet" href="commands.css"> <!-- CSS dosyasını bağlama -->
+    <style>
+        .content {
+            display: flex;
+            justify-content: space-between;
+            flex-wrap: wrap;
+        }
+        .section {
+            flex: 1;
+            margin-bottom: 20px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div class="logo-container">
+                <img src="img/logo.png" alt="BlackWood Logo" class="logo-small">
+                <div style="display: inline-block; margin-left: 10px;">
+                    <h1>BlackWood Development</h1>
+                    <p1>Komut Listesi</p1><br>
+                    <a href="index.html" class="btn" style="color: white;">Anasayfaya Dön</a>
+                </div>
+            </div>
+        </div>
+        
+    </header>
+
+    
+    <div class="content">
+        <section id="moderation" class="section">
+            <h2>Moderasyon Komutları</h2>
+            <div class="commands-table">
+                <ul>
+                    <li><span class="emoji">🔇</span> <code>.allmute / allmute aç</code></li>
+                    <li><span class="emoji">🔨</span> <code>.ban [@Lazutti / ID] &lt;sebep&gt;</code></li>
+                    <li><span class="emoji">📦</span> <code>.dağıt [Kategori ID]</code></li>
+                    <li><span class="emoji">🔨</span> <code>.forceban [@Lazutti / ID] &lt;sebep&gt;</code></li>
+                    <li><span class="emoji">⛓️</span> <code>.jail [@Lazutti / ID] &lt;sebep&gt;</code></li>
+                    <li><span class="emoji">🔒</span> <code>.kilit</code></li>
+                    <li><span class="emoji">🔇</span> <code>.cmute [@lazutti / ID] &lt;süre[10m]&gt; &lt;sebep&gt;</code></li>
+                    <li><span class="emoji">🌍</span> <code>.nerede [@Lazutti / ID]</code></li>
+                    <li><span class="emoji">🗣️</span> <code>.say</code></li>
+                    <li><span class="emoji">📜</span> <code>.sicil [@Lazutti / ID]</code></li>
+                    <li><span class="emoji">🗑️</span> <code>.sil &lt;0-100&gt;</code></li>
+                    <li><span class="emoji">🔓</span> <code>.unban [@Lazutti / ID]</code></li>
+                    <li><span class="emoji">🔓</span> <code>.unforceban [@Lazutti / ID]</code></li>
+                    <li><span class="emoji">🔓</span> <code>.unjail [@Lazutti / ID] &lt;sebep&gt;</code></li>
+                    <li><span class="emoji">🔊</span> <code>.unmute [@Lazutti / ID]</code></li>
+                    <li><span class="emoji">🗣️</span> <code>.voice-say</code></li>
+                    <li><span class="emoji">⚠️</span> <code>.warn [@Lazutti / ID] &lt;sebep&gt;</code></li>
+                    <li><span class="emoji">🚫</span> <code>.yasaklıtag [tag]</code></li>
+                </ul>
+            </div>
+        </section>
+
+        <section id="level" class="section">
+            <h2>Stat Komutları</h2>
+            <div class="commands-table">
+                <ul>
+                    <li><span class="emoji">💰</span> <code>.bonus [+/-] [@Lazutti / ID] &lt;Adet&gt;</code></li>
+                    <li><span class="emoji">📋</span> <code>.görev</code></li>
+                    <li><span class="emoji">📋</span> <code>.görevler</code></li>
+                    <li><span class="emoji">📩</span> <code>.invite [@Lazutti / ID]</code></li>
+                    <li><span class="emoji">💳</span> <code>.puan [+/-] [@lazutti / ID] &lt;Adet&gt;</code></li>
+                    <li><span class="emoji">📊</span> <code>.rank [+/-/temizle/list] [Puan] [@Roller]</code></li>
+                    <li><span class="emoji">🔄</span> <code>.senkron [@Lazutti / ID]</code></li>
+                    <li><span class="emoji">📈</span> <code>.stat [@Lazutti / ID]</code></li>
+                    <li><span class="emoji">🏷️</span> <code>.tag-aldır [@Lazutti / ID]</code></li>
+                    <li><span class="emoji">🔝</span> <code>.top [Kategori]</code></li>
+                    <li><span class="emoji">📊</span> <code>.ystat [@Lazutti / ID]</code></li>
+                </ul>
+            </div>
+        </section>
+        
+
+        <section id="registration" class="section">
+            <h2>Kayıt Komutları</h2>
+            <div class="commands-table">
+                <ul>
+                    <li><span class="emoji">🛡️</span> <code>.kayıt [@Lazutti / ID] &lt;isim&gt; &lt;yaş&gt;</code></li>
+                    <li><span class="emoji">🛡️</span> <code>.kayıtlar [@Lazutti]</code></li>
+                    <li><span class="emoji">🛡️</span> <code>.kayıtsız [@Lazutti / ID]</code></li>
+                    <li><span class="emoji">🛡️</span> <code>.kullanıcı-bilgi [@Lazutti / ID]</code></li>
+                    <li><span class="emoji">🛡️</span> <code>.tag</code></li>
+                </ul>
+            </div>
+        </section>
+
+        <section id="general" class="section">
+            <h2>Genel Komutlar</h2>
+            <div class="commands-table">
+                <ul>
+                    <li><span class="emoji">💬</span> <code>.afk &lt;Sebep&gt;</code></li>
+                    <li><span class="emoji">🖼️</span> <code>.avatar [@Lazutti / ID]</code></li>
+                    <li><span class="emoji">🖼️</span> <code>.banner [@Lazutti / ID]</code></li>
+                    <li><span class="emoji">🚀</span> <code>.booster &lt;İsim&gt;</code></li>
+                    <li><span class="emoji">📱</span> <code>.cihaz [@Lazutti / ID]</code></li>
+                    <li><span class="emoji">🚶</span> <code>.git [@Kullanıcı]</code></li>
+                    <li><span class="emoji">❤️</span> <code>.ship [@Lazutti / ID / Random]</code></li>
+                    <li><span class="emoji">💭</span> <code>.snipe</code></li>
+                    <li><span class="emoji">🎵</span> <code>.spotify [@Lazutti / ID]</code></li>
+                    <li><span class="emoji">👥</span> <code>.çek [@Lazutti / ID]</code></li>
+                </ul>
+            </div>
+        </section>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

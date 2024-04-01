@@ -1,0 +1,123 @@
+/* Global stil ayarları */
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f2f2f2;
+    color: #333;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+/* Header */
+header {
+    background-color: #8B0000;
+    color: #fff;
+    padding: 20px 0;
+    text-align: center;
+}
+
+header h1 {
+    margin: 0;
+}
+
+/* Menü */
+.menu {
+    width: 250px;
+    background-color: #f8f9fa; /* Arka plan rengi */
+    position: fixed;
+    top: 80px; /* Header yüksekliği kadar yukarıdan başlasın */
+    left: -250px;
+    bottom: 0;
+    overflow-y: auto; /* Sayfa boyunca kaydırma */
+    transition: left 0.3s ease;
+}
+
+.menu ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+.menu li {
+    border-bottom: 1px solid #ccc; /* Sınırların rengi */
+    padding: 10px;
+}
+
+.menu li:last-child {
+    border-bottom: none;
+}
+
+.menu a {
+    color: #333; /* Metin rengi */
+    text-decoration: none;
+    display: block;
+    transition: background-color 0.3s;
+}
+
+.menu a:hover {
+    background-color: #e9ecef; /* Üzerine gelindiğinde arka plan rengi */
+}
+
+.menu-toggle {
+    background-color: #333; /* Menü açma/kapama düğmesinin arka plan rengi */
+    color: #fff; /* Menü açma/kapama düğmesi metin rengi */
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    position: fixed;
+    top: 20px;
+    left: 20px;
+    z-index: 999; /* Diğer öğelerin üzerinde görünmesini sağlar */
+    border-radius: 5px; /* Köşeleri yuvarlatır */
+}
+
+.menu-toggle:hover {
+    background-color: #555; /* Üzerine gelindiğinde arka plan rengi */
+}
+
+.logo-small {
+    width: 75px; /* veya istediğiniz boyut */
+    height: auto; /* Genişlik oranına göre otomatik olarak ayarlanması */
+}
+
+.section {
+    margin-top: 40px;
+    max-width: 400px; /* İçeriğin genişliğini küçültmek için max-width değerini azaltın */
+    width: 100%;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.commands-table ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.commands-table li {
+    padding: 5px 0; /* Liste öğesi boşluğunu küçültmek için padding değerini azaltın */
+    border-bottom: 1px solid #eee;
+}
+
+.commands-table li:last-child {
+    border-bottom: none;
+}
+
+.commands-table li code {
+    font-family: 'Courier New', Courier, monospace;
+    background-color: #eaeaea;
+    padding: 2px 4px; /* Kod bloğu içeriğinin boşluğunu küçültmek için padding değerini azaltın */
+    border-radius: 3px;
+}
+
+.commands-table h2 {
+    font-size: 1.5em;
+    color: #333;
+    margin-bottom: 10px;
+}
