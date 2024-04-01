@@ -1,0 +1,179 @@
+/* Genel stil */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    color: #333;
+    background-color: #f8f9fa; /* Açık gri tonu */
+}
+
+.container {
+    max-width: 1200px;
+    margin: auto;
+    padding: 20px;
+}
+
+/* Header */
+header {
+    background-color: #8B0000; /* Koyu kırmızı renk */
+    padding: 20px 0;
+    text-align: center;
+}
+
+header .logo {
+    max-width: 200px; /* Logo boyutunu biraz büyüttük */
+    max-height: 60px; /* Logo boyutunu biraz büyüttük */
+    display: inline-block;
+    vertical-align: middle;
+    margin-right: 10px;
+}
+
+header h1 {
+    font-size: 32px; /* Başlık boyutunu biraz büyüttük */
+    color: #fff;
+    display: inline-block;
+    vertical-align: middle;
+    margin: 0;
+}
+
+/* Ana bölüm */
+.main-section {
+    background-image: url('img/ana_bolum_gorseli.jpg'); /* Görselin yolunu doğru şekilde belirtin */
+    background-size: cover;
+    background-position: center;
+    padding: 50px;
+    margin-top: 30px;
+    border-radius: 20px;
+    box-shadow: 0px 0px 40px rgba(0, 0, 0, 0.2); /* Gölgelendirme */
+    color: #fff; /* Beyaz yazı rengi */
+}
+
+/* Paketler bölümü */
+.packages {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.package {
+    background-color: #fff; /* Beyaz arka plan */
+    border-radius: 20px;
+    padding: 30px;
+    margin: 20px;
+    width: calc(33.33% - 40px);
+    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.1); /* Hafif gölgelendirme */
+    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Hover efekti için geçiş */
+}
+
+.package:hover {
+    transform: translateY(-5px); /* Hover efekti */
+    box-shadow: 0px 0px 40px rgba(0, 0, 0, 0.2); /* Gölgelendirme */
+}
+
+.package h3 {
+    font-size: 24px; /* Başlık boyutunu biraz büyüttük */
+    color: #333; /* Başlık rengi */
+    margin-bottom: 10px;
+}
+
+.package .price {
+    font-size: 20px;
+    color: #8B0000; /* Koyu kırmızı renk */
+    margin-bottom: 10px;
+}
+
+.package .description {
+    font-size: 18px;
+    color: #555; /* Açık gri renk */
+    margin-bottom: 20px;
+}
+
+.package .btn {
+    background-color: #8B0000; /* Koyu kırmızı renk */
+    color: #fff;
+    padding: 12px 24px;
+    border-radius: 5px;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 18px;
+    transition: background-color 0.3s ease; /* Hover efekti için geçiş */
+}
+
+.package .btn:hover {
+    background-color: #750000; /* Koyu kırmızı (hafif ton değişimi) */
+}
+
+
+/* Hakkımızda ve İletişim bölümü */
+.about-contact-section {
+    background-color: #8B0000; /* Koyu kırmızı arka plan */
+    padding: 50px;
+    margin-top: 30px;
+    border-radius: 10px;
+    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.1); /* Hafif gölgelendirme */
+    color: #fff; /* Beyaz yazı rengi */
+}
+
+.about-contact-section h2 {
+    text-align: center;
+}
+
+.about-contact-section p {
+    color: #fff; /* Beyaz yazı rengi */
+}
+
+.contact-info {
+    font-size: 18px;
+    color: #fff; /* Beyaz renk */
+    margin-top: 20px;
+}
+/* Buton stilini güncelle */
+.btn {
+    background-color: #8B0000; /* Koyu kırmızı renk */
+    color: #fff;
+    padding: 12px 24px;
+    border-radius: 5px;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 18px;
+    transition: background-color 0.3s ease; /* Hover efekti için geçiş */
+}
+/* Bize Ulaşın başlığını kırmızı yap */
+.about-contact-section h2 {
+    color: #8B0000; /* Koyu kırmızı */
+}
+
+/* Copy metnini kırmızı yap */
+.copy-text {
+    color: #8B0000; /* Koyu kırmızı */
+}
+
+.btn:hover {
+    background-color: #750000; /* Koyu kırmızı (hafif ton değişimi) */
+}
+/* Link butonları */
+ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    text-align: center; /* Linklerin ortalanması */
+}
+
+ul li {
+    display: inline;
+}
+
+ul li a {
+    background-color: #8B0000; /* Koyu kırmızı */
+    color: #fff;
+    padding: 10px 20px;
+    border-radius: 5px;
+    text-decoration: none;
+    margin-right: 10px;
+    transition: background-color 0.3s ease; /* Hover efekti için geçiş */
+    display: inline-block;
+}
+
+ul li a:hover {
+    background-color: #000; /* Koyu siyah */
+}

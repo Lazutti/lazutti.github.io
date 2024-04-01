@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BlackWood Development</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <img src="img/logo.png" alt="BlackWood Logo" class="logo">
+            <h1>BlackWood Development</h1>
+            <nav>
+                <ul>
+                    <li><a href="#paketler">Paketler</a></li>
+                    <li><a href="#hakkimizda">Hakkımızda</a></li>
+                    <li><a href="#bizeulasin">İletişim</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <section id="hero">
+        <div class="container">
+            <h2 style="text-align: center;">Discord sunucunuza özel botlarımızla daha eğlenceli, güvenli ve düzenli bir ortam istiyorsan doğru yerdesin!</h2>
+            <div class="button-box" style="text-align: center;">
+                <a href="#paketler" class="btn">Hemen Paketlerimize Göz Atın</a>
+            </div>
+        </div>
+    </section>
+    
+    <section id="paketler">
+        <div class="container">
+            <h2 style="text-align: center;">Paketlerimiz</h2>
+            <p style="text-align: center; margin-bottom: 20px;">Paket fiyatlarımız aylıktır.</p>
+            <div class="packages">
+                <div class="package">
+                    <h3>Black+</h3>
+                    <p class="price">450 TL</p>
+                    <p class="description"> - 1 Adet Moderasyon Botu </p>
+                    <p class="description"> - 3 Adet Welcome Botu </p>
+                    <p class="description"> - 3 Guard Botu </p>
+                    <p class="description"> - 1 Adet DataBase/Backup </p>
+                    <p class="description"> - VDS Ücreti bizden </p>
+                    <a href="https://discord.gg/bvjrvnJ8ze" class="btn">Satın Al</a>
+
+                </div>
+                <div class="package">
+                    <h3>Black++</h3>
+                    <p class="price">550 TL</p>
+                    <p class="description"> - 1 Adet Moderasyon Botu </p>
+                    <p class="description"> - 4 Adet Welcome Botu </p>
+                    <p class="description"> - 3+1 Guard Botu </p>
+                    <p class="description"> - 1 Adet DataBase/Backup </p>
+                    <p class="description"> - 1 Adet Özel Oda Botu </p>
+                    <p class="description"> - VDS Ücreti bizden </p>
+                    <a href="https://discord.gg/bvjrvnJ8ze" class="btn">Satın Al</a>
+
+                </div>
+                <div class="package">
+                    <h3>Black VIP</h3>
+                    <p class="price">800 TL</p>
+                    <p class="description"> - 1 Adet Moderasyon Botu </p>
+                    <p class="description"> - 5 Adet Welcome Botu </p>
+                    <p class="description"> - 3+1 Guard Botu </p>
+                    <p class="description"> - 1 Adet Özel Oda Botu </p>
+                    <p class="description"> - 1 Adet Fun Botu </p>
+                    <p class="description"> - 1 Adet DataBase/Backup </p>
+                    <p class="description"> - VDS Ücreti bizden </p>
+                    <a href="https://discord.gg/bvjrvnJ8ze" class="btn">Satın Al</a>
+
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="hakkimizda">
+        <div class="container">
+            <h2 style="text-align: center;">Hakkımızda</h2>
+            <p style="text-align: center; line-height: 1.6;">BlackWood Development, Discord sunucuları için özel olarak geliştirdiği pm2 sistemli public botlarla bilinmektedir. Misyonumuz, sunucularınızı daha eğlenceli, güvenli ve düzenli bir ortam haline getirmektir. Sektördeki deneyimimiz ve yenilikçi yaklaşımımızla, yakın gelecekte daha büyük ve yenilikçi projelerle karşınızda olacağız. Bizimle birlikte bu heyecan verici yolculuğa katılmak için sabırsızlanıyoruz! 😊</p>
+        </div>
+    </section>
+    
+    <section id="bizeulasin" style="background-color: #8B0000;">
+        <div class="container">
+            <h2 style="text-align: center; color: #fff;">Bize Ulaşın</h2>
+            <p style="text-align: center; color: #fff;">BlackWood Development ile iletişime geçmek için aşağıdaki Discord bağlantılarından birini kullanabilirsiniz:</p>
+            <div style="display: flex; justify-content: center; margin-bottom: 20px;">
+                <a href="https://discord.com/users/257864653663633408" target="_blank">
+                    <img src="img/dc_profile.jpg" alt="Discord Profili" style="max-width: 385px; height: auto; margin-right: 20px;">
+                </a>
+                <a href="https://discord.com/users/707679268217552978" target="_blank">
+                    <img src="img/dc_profile2.jpg" alt="Discord Profili" style="max-width: 400px; height: auto;">
+                </a>
+            </div>
+        </div>
+    </section>
+    
+
+    <footer style="background-color: #8B0000;">
+        <div class="container">
+            <p style="color: #fff;">BlackWood Development &copy; 2024</p>
+        </div>
+    </footer>
+    
+
+    <script>
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+
+                const target = document.querySelector(this.getAttribute('href'));
+
+                window.scrollTo({
+                    top: target.offsetTop,
+                    behavior: 'smooth'
+                });
+            });
+        });
+    </script>
+</body>
+</html>
